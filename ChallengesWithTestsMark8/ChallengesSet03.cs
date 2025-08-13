@@ -5,7 +5,7 @@ namespace ChallengesWithTestsMark8
 {
     public class ChallengesSet03
     {
-        public static bool ArrayContainsAFalse(bool[] vals)
+        public bool ArrayContainsAFalse(bool[] vals)
         {
             for (int i = 0; i < vals.Length; i++)
             {
@@ -80,7 +80,7 @@ namespace ChallengesWithTestsMark8
         public decimal Divide(decimal dividend, decimal divisor)
         {
             if (divisor == 0)
-                throw new DivideByZeroException("Divisor cannot be zero.");
+                return 0;
 
             return dividend / divisor;
         }
